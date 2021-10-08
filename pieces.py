@@ -58,13 +58,13 @@ class Knight(Piece):
 class Rook(Piece):
     pass
 
-testWhitePawn = Pawn("a2", "w", "♙")
+""" testWhitePawn = Pawn("a2", "w", "♙")
 testBlackPawn = Pawn("a7", "b", "♟︎")
 testBlackKing = King("e1", "b", "♔")
 
 print(testWhitePawn.canMove("a5"))
 print(testBlackPawn.canMove("a6"))
-print(testBlackKing.canCapture("f3"))
+print(testBlackKing.canCapture("f3")) """
 
 """ blackRook = Rook("a1", "b", "♜")
 blackRook.location = strToXY("a5")
@@ -73,3 +73,21 @@ blackRook.location = strToXY("a5")
 print(blackRook.name)
 print(type(blackRook.startLocation))
 print("The black rook is now at: {}.".format(blackRook.location)) """
+
+
+
+capturedPieces = {}
+
+whitePieces = {
+     
+}
+
+blackPieces = {
+
+}
+
+chessPieces = {
+    "whitePieces": whitePieces,
+    "blackPieces": blackPieces,
+    "capturedPieces": capturedPieces
+}
