@@ -76,15 +76,48 @@ print("The black rook is now at: {}.".format(blackRook.location)) """
 
 
 
-capturedPieces = {}
-
 whitePieces = {
+    "whiteKing": King('e1', 'w', '♚'),
+    "whiteQueen": Queen('d1', 'w', '♛'),
+    "whiteBishop1": Bishop('c1', 'w', '♝'),
+    "whiteBishop2": Bishop('f1', 'w', '♝'),
+    "whiteKnight1": Knight('b1', 'w', '♞'),
+    "whiteKnight2": Knight('g1', 'w', '♞'),
+    "whiteRook1": Rook('a1', 'w', '♜'),
+    "whiteRook2": Rook('h1', 'w', '♜'),
+    "whitePawn1": Pawn('a2', 'w', '♟'),
+    "whitePawn2": Pawn('b2', 'w', '♟'),
+    "whitePawn3": Pawn('c2', 'w', '♟'),
+    "whitePawn4": Pawn('d2', 'w', '♟'),
+    "whitePawn5": Pawn('e2', 'w', '♟'),
+    "whitePawn6": Pawn('f2', 'w', '♟'),
+    "whitePawn7": Pawn('g2', 'w', '♟'),
+    "whitePawn8": Pawn('h2', 'w', '♟'),
+
      
 }
 
 blackPieces = {
+    "blackKing": King('e8', 'b', '♔'),
+    "blackQueen": Queen('d8', 'b', '♕'),
+    "blackBishop1": Bishop('c8', 'b', '♗'),
+    "blackBishop2": Bishop('f8', 'b', '♗'),
+    "blackKnight1": Knight('b8', 'b', '♘'),
+    "blackKnight2": Knight('g8', 'b', '♘'),
+    "blackRook1": Rook('a8', 'b', '♖'),
+    "blackRook2": Rook('h8', 'b', '♖'),
+    "blackPawn": Pawn('a7', 'b', '♙'),
+    "blackPawn": Pawn('b7', 'b', '♙'),
+    "blackPawn": Pawn('c7', 'b', '♙'),
+    "blackPawn": Pawn('d7', 'b', '♙'),
+    "blackPawn": Pawn('e7', 'b', '♙'),
+    "blackPawn": Pawn('f7', 'b', '♙'),
+    "blackPawn": Pawn('g7', 'b', '♙'),
+    "blackPawn": Pawn('h7', 'b', '♙'),
 
 }
+
+capturedPieces = {}
 
 chessPieces = {
     "whitePieces": whitePieces,
