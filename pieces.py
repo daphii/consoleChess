@@ -15,6 +15,7 @@ class Piece:
         self.icon = icon
         self.hasMoved = False
         self.captured = False
+        self.pieceType = self.__class__.__name__
         self.name = self.colour + " " +  self.__class__.__name__
 
     def __str__(self):
@@ -92,9 +93,7 @@ whitePieces = {
     "whitePawn5": Pawn('e2', 'w', '♟'),
     "whitePawn6": Pawn('f2', 'w', '♟'),
     "whitePawn7": Pawn('g2', 'w', '♟'),
-    "whitePawn8": Pawn('h2', 'w', '♟'),
-
-     
+    "whitePawn8": Pawn('h2', 'w', '♟')   
 }
 
 blackPieces = {
@@ -106,18 +105,18 @@ blackPieces = {
     "blackKnight2": Knight('g8', 'b', '♘'),
     "blackRook1": Rook('a8', 'b', '♖'),
     "blackRook2": Rook('h8', 'b', '♖'),
-    "blackPawn": Pawn('a7', 'b', '♙'),
-    "blackPawn": Pawn('b7', 'b', '♙'),
-    "blackPawn": Pawn('c7', 'b', '♙'),
-    "blackPawn": Pawn('d7', 'b', '♙'),
-    "blackPawn": Pawn('e7', 'b', '♙'),
-    "blackPawn": Pawn('f7', 'b', '♙'),
-    "blackPawn": Pawn('g7', 'b', '♙'),
-    "blackPawn": Pawn('h7', 'b', '♙'),
-
+    "blackPawn1": Pawn('a7', 'b', '♙'),
+    "blackPawn2": Pawn('b7', 'b', '♙'),
+    "blackPawn3": Pawn('c7', 'b', '♙'),
+    "blackPawn4": Pawn('d7', 'b', '♙'),
+    "blackPawn5": Pawn('e7', 'b', '♙'),
+    "blackPawn6": Pawn('f7', 'b', '♙'),
+    "blackPawn7": Pawn('g7', 'b', '♙'),
+    "blackPawn8": Pawn('h7', 'b', '♙')
 }
 
-capturedPieces = {}
+capturedPieces = {
+}
 
 chessPieces = {
     "whitePieces": whitePieces,
