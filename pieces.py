@@ -18,6 +18,8 @@ class Piece:
         self.pieceType = self.__class__.__name__
         self.name = self.colour + " " +  self.__class__.__name__
 
+# TODO add "id" to params
+
     def __str__(self):
         return self.icon
     
@@ -115,6 +117,8 @@ blackPieces = {
     "blackPawn8": Pawn('h7', 'b', '♙')
 }
 
+
+# TODO get rid of this dict
 capturedPieces = {
 }
 
